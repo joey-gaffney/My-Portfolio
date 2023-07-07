@@ -11,7 +11,7 @@ const About = () => {
       <article className=" max-w-3xl mx-auto text-center">
         <p className="text-xl sm:text-3xl">
           I'm a front-end web developer currently working with JavaScript and
-          React. I am playing around with Typescript and Next.js.{" "}
+          React. I am playing around with TypeScript and Next.js.{" "}
           <span className="aboutpink">
             My cousin, Max, a software engineer at the NFL, introduced me to
             code 2 years ago. Since then, I've been coding everyday and havn't
