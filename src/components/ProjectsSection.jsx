@@ -14,7 +14,7 @@ const ProjectsSection = () => {
         </h2>
       </header>
       {/* <p className="text-center">COMING SOON...</p> */}
-      <div className="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+      <div className="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
         {projectdata.map((project) => (
           <ProjectsItem
             title={project.title}
