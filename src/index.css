@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0f0d0e;
+  color: #f9f4da;
+  overflow-x: hidden;
+}
+
+.heroimg {
+  box-shadow: 12px 12px 0px 3px #1b1d23;
+}
+
+.herobtn {
+  background-color: #fcba28;
+
+  /* background-color: #0ba95b; */
+}
+
+li a:hover {
+  color: #f38ba3;
+  transition: all 0.3s ease;
+}
+
+.aboutpink {
+  color: #f38ba3;
+}
+
+.mobilenav {
+  background-color: #0f0d0e;
+  animation: slide-in 0.3s ease-in-out;
+}
+.mobilenav a:hover {
+  background-color: #1b1d23;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
