@@ -103,7 +103,6 @@ const Navigation = () => {
         onClick={toggleMobileMenu}
       >
         {!isMobileMenuOpen ? <CiMenuFries /> : <AiOutlineClose />}
-        {/* <FaBars /> */}
       </button>
       {isMobileMenuOpen && (
         <ul
