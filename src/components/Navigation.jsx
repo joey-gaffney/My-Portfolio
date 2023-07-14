@@ -127,7 +127,7 @@ const Navigation = () => {
           </li>
           <li className="w-full text-center">
             <a
-              href=" /"
+              href="https://docs.google.com/document/d/1-myDK1TwFobGhsIESecIx9vNwn9o71AeeATEkgbyyW8/edit?usp=sharing"
               target="_blank"
               className={`font-bold tracking-tighter block rounded-lg py-4 ${
                 activeLink === 2 ? "" : ""
