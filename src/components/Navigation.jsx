@@ -4,9 +4,8 @@ import { AiOutlineClose } from "react-icons/ai";
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const menuRef = useRef(null);
-
   const [activeLink, setActiveLink] = useState(null);
+  const menuRef = useRef(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -75,7 +74,11 @@ const Navigation = () => {
           </a>
         </li>
         <li>
-          <a href="/" target="_blank" className="font-bold tracking-tighter">
+          <a
+            href="https://docs.google.com/document/d/1-myDK1TwFobGhsIESecIx9vNwn9o71AeeATEkgbyyW8/edit?usp=sharing"
+            target="_blank"
+            className="font-bold tracking-tighter"
+          >
             Resume
           </a>
         </li>
