@@ -1,4 +1,5 @@
 import React from "react";
+import { motion as Motion } from "framer-motion";
 
 const ProjectsItem = ({
   title,
@@ -7,13 +8,27 @@ const ProjectsItem = ({
   previewlink,
   codelink,
   imgUrl,
+  index,
 }) => {
   const handlePreviewLinkClick = (e) => {
     e.preventDefault();
     window.open(previewlink, "_blank");
   };
+
+  const animationDelay = 0.1; // Adjust this value to set the delay for the second project
+
   return (
-    <div className="group  ">
+    <Motion.div
+      initial={{ opacity: 0, scale: 0, blur: 20 }}
+      whileInView={{ opacity: 1, scale: 1, blur: 0 }}
+      transition={{
+        duration: 0.3,
+        delay: index === 0 ? animationDelay : 0.3, // Apply the delay only to the second project
+        // ease: [0, 0.71, 0.2, 1.01],
+        // ease: [0, 0.71, 0.2, 1.01],
+      }}
+      className="group  "
+    >
       <a href="#" onClick={handlePreviewLinkClick}>
         <figure className="mb-6">
           <img
@@ -27,7 +42,6 @@ const ProjectsItem = ({
         </header>
         <p className=" opacity-70 mb-4 leading-7">{info}</p>
       </a>
-      <span className=" inline-block text-sm">Built with:</span>{" "}
       {stack.map((item) => (
         <span
           key={item}
@@ -52,7 +66,7 @@ const ProjectsItem = ({
           Link to code
         </a>
       </div>
-    </div>
+    </Motion.div>
   );
 };
 
